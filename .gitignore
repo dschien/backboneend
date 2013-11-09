@@ -1,0 +1,6 @@
+greendoors/local_settings.py
+ipython.requirements.osx.txt
+*.pyc
+var
+mailconf
+log/*
