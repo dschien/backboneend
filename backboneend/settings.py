@@ -76,8 +76,10 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static/'),
-    # os.path.join(PROJECT_ROOT, 'web/build'),
+    #os.path.join(PROJECT_ROOT, 'static/'),
+    #"/Users/schien/workspaces/web/backbone_simple",
+    os.path.join(PROJECT_ROOT, 'api/js'),
+    os.path.join(PROJECT_ROOT, 'api/lib'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -168,11 +170,11 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         # for web auth
         # for oauth
-        'rest_framework.authentication.OAuth2Authentication',
+        #'rest_framework.authentication.OAuth2Authentication',
         # 'rest_framework.authentication.BasicAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
+        #'rest_framework.permissions.IsAuthenticated',
     )
 
     # 'PAGINATE_BY': 10
